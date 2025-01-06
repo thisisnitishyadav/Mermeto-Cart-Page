@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W2Ef~ZOtUdNZkstwpvxFrtqLSqIBgTsT~My2GDXtFrvu84qX7ZxU9DUAh2-AiBHmPfhME5OAXemEaPI~gjpPkwWJL9JTiPaGRaOmhb6-wSeAoEHFgDOET8xk0TeL4c1DSY587IW8r6KJAxIfwxNRlk~xkhUuZp7jBnXskuOKd62NN-HqirDevmuxwrgogkGXHzFQqU6PhivoMGE~CbLC0I-Ov1ZxQCiOjnlefbtkoWYCY8p4HnRP5rmBNXMw~bPDdGij1S0mhdadx-Tju7uREbhVjszeVihx7ba4bWcOfC5Sdz6Bmsx1iuoYdi8daNUDORIgTwbVXHiAHeafdF1krA__" alt="Marmeto Logo">
+     <span>Marmeto</span>      
+    </div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <div class="cart-icon">
+          <span class="cart-count">2</span>
+          <img src="https://s3-alpha-sig.figma.com/img/1461/f3d6/ff74c027a1888544144abe4be6e02cbf?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gJTIy~k4eXyCyLo51sM6p8NJO3RSXQclvR3EnKQOrQCQE2qNMmNMc6i-qIEwad5FSJ5GiVzz4wXddkEEppaWs2akV6-cl4mAgJfHc4p3aVDnXfLy5dLZ8Pxw1xRgZyAK~bRI0IQapNg4E8Iv1UY0Dzxx7I2Hyawqhb8IP9ivYvYmIIzpnGpBq3IFD8Ouhf01UDz511GbjHAoJ8uIAQPIRJglR1WL~sw0SqTB48OcOkN~ZrofRWu2yoeKfXUC5C37mihWFkNuT3juSVRd-I-2koctZnEo9~Bex2Clz~T0ZfB84JTZalohi6dmbZN-SGZPHW1MTiW0xzXmnAjdd5JJsg__" alt="Cart">
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="breadcrumb">
+      <div class="container">
+        <a href="#">Home</a> > <span>Cart</span>
+      </div>
+    </section>
+
+    <section class="cart">
+      <div class="container cart-container">
+        <div class="cart-items">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="product-info">
+                  <img src="sofa.jpg" alt="Asgaard Sofa" class="product-image">
+                  <span>Asgaard sofa</span>
+                </td>
+                <td>Rs. 250,000.00</td>
+                <td>
+                  <input type="number" value="1" class="quantity-input" min="1">
+                </td>
+                <td>Rs. 250,000.00</td>
+                <td><button class="remove-btn">🗑️</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="cart-totals">
+          <h3>Cart Totals</h3>
+          <p>Subtotal: <span>Rs. 250,000.00</span></p>
+          <p>Total: <span>Rs. 250,000.00</span></p>
+          <button class="checkout-btn">Check Out</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-item">
+        <img src="quality-icon.png" alt="High Quality">
+        <p>High Quality<br>crafted from top materials</p>
+      </div>
+      <div class="footer-item">
+        <img src="warranty-icon.png" alt="Warranty Protection">
+        <p>Warranty Protection<br>Over 2 years</p>
+      </div>
+      <div class="footer-item">
+        <img src="shipping-icon.png" alt="Free Shipping">
+        <p>Free Shipping<br>Order over 150 $</p>
+      </div>
+      <div class="footer-item">
+        <img src="support-icon.png" alt="24/7 Support">
+        <p>24 / 7 Support<br>Dedicated support</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
