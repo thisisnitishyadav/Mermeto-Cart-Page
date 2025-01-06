@@ -14,49 +14,74 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    
   }
   
   /* Header */
   .header {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center elements vertically */
     background-color: #fff;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px;
     border-bottom: 2px solid #f0f0f0;
   }
   
-  .header .logo img {
+  /* Logo Section */
+  .logo {
+    display: flex; /* Flexbox for logo text and image */
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+  }
+  
+  .logo img {
     height: 40px;
   }
   
-  .header .nav a {
-    margin: 0 15px;
+  .logo span {
+    font-size: 20px;
+    font-weight: bold;
     color: #333;
-    text-decoration: none;
   }
   
-  .header .cart-icon {
-    position: relative;
-    display: flex;
+  /* Navigation Links */
+  .nav {
+    display: flex; /* Align links horizontally */
+    gap: 20px; /* Space between links */
+  }
+  
+  .nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #ff5722;
+  }
+  
+  /* Cart Section */
+  .cart-icon {
+    display: flex; /* Align numbers horizontally */
     align-items: center;
   }
   
-  .cart-icon img {
-    height: 24px;
+  .cart-count-1 {
+    display: flex; /* Flexbox for numbers */
+    gap: 10px; /* Space between numbers */
   }
   
-  .cart-icon .cart-count {
-    position: absolute;
-    top: -10px;
-    right: -10px;
+  .cart-count-1 span {
+    font-size: 16px;
     background-color: #ff5722;
-    color: white;
+    color: #fff;
     border-radius: 50%;
-    padding: 5px 8px;
-    font-size: 12px;
-    font-weight: bold;
+    padding: 8px 12px;
+    text-align: center;
   }
+  
   
   /* Breadcrumb */
   .breadcrumb {
@@ -126,7 +151,7 @@
   /* Cart Totals */
   .cart-totals {
     width: 30%;
-    background-color: #fff;
+    background-color: #FAF3EA;
     padding: 20px;
     border-radius: 8px;
   }
@@ -144,9 +169,10 @@
   .cart-totals .checkout-btn {
     width: 100%;
     padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
+    background-color: #FAF3EA;
+    color: black;
+    border: 1px solid ;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
   }
